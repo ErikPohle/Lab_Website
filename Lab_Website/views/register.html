@@ -12,12 +12,57 @@
 	<link href="../resources/css/my_style.css" rel="stylesheet">
   </head>
   <body>
-	
+
 	<img src="../resources/img/beproudcapaabanner.jpg" class="img-fluid" alt="Registration Page Banner for CU Football">
     <br>
 	<br>
 	<div class="container">
 		<form action="home.html">
+      <label for="input_id">Name:</label>
+      <input type="text" id="input_id" name="field_name">
+      <br>
+      <label for="input_id">Email:</label>
+      <input type="email" id="input_id" name="field_name">
+
+      <br>
+      <label for="input_id">Password:</label>
+      <input type="password" id="input_id" name="field_name">
+
+      <br>
+      <label for="input_id">Confirm Password:</label>
+      <input type="password" id="input_id" name="field_name">
+
+      <br>
+      <label for="input_id">Email:</label>
+      <input type="text" id="input_id" name="field_name">
+
+      <br>
+      <label for="input_id">CU Boulder Alumni:</label>
+      <input type="radio" name="choice" value="1" checked> Yes
+      <input type="radio" name="choice" value="2"> No
+
+      <br>
+      <label for="input_id">CU Boulder Student:</label>
+      <input type="radio" name="choice" value="1" checked> Yes
+      <input type="radio" name="choice" value="2"> No
+      <br>
+      <label> Student Status </label>
+      <input type="radio" name="choice" value="1" checked> Undergrad
+      <select name="select_choice">
+      <option selected>Pick an Option</option>
+      <option value="1">Freshman</option>
+      <option value="2">Sophomore</option>
+      <option value="3">Junior</option>
+      <option value="4">Senior</option>
+      </select>
+      <input type="radio" name="choice" value="1"> Grad
+
+      <select name="select_choice">
+      <option selected>Pick an Option</option>
+      <option value="1">MA</option>
+      <option value="2">MBA</option>
+      <option value="3">PhD</option>
+      </select>
 			<!--
 				Todo: Create a form with the following fields:
 					1. Name Text Field
@@ -33,7 +78,7 @@
 					11. Submit Button (links to home page)
 
 			-->
-			<input type="submit" value="submit" class="btn btn-primary btn-block">
+			<input type="submit" value="submit" class="btn btn-primary btn-block" onclick="home.html">
 		</form>
 	</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
